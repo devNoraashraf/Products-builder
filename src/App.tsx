@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './index.css'
 import ProductsCard from './components/ProductsCard'
 
