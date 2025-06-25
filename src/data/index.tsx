@@ -4,7 +4,7 @@ export const products: Iproduct[] = [
     {
         id: uuid(),
         title: "NORA",
-        description: "A fast car",
+        description: "A fast carjfffffffffjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
         price: 50000,
         imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s",
         colors: ["red", "blue", "green"],

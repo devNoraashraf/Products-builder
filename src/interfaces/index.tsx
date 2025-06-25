@@ -4,7 +4,7 @@ export interface Iproduct {
     description: string;
     price: number;
     imageURL: string;
-    colors?: string[];
+    colors: string[];
     category?: {
         name?: string;
         imageURL?: string;
