@@ -1,21 +1,27 @@
+import type { Iproduct } from "../interfaces";
 import Image from "./Image";
 import Button from "./Ui/Button";
+interface ProductsCardProps {
+    product: Iproduct;
+}
 
-const ProductsCard = () => {
-  return (
-    <div className="border rounded-md p-4 flex flex-col m-4 ">
+const ProductsCard = ({ product }: ProductsCardProps) => {
+  const { title, description, price, imageURL, colors } = product;
+    return (
+        <div className="border rounded-md p-4 flex flex-col m-4 ">
 
-      <Image imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s" altText="car" className="w-full h-100 object-cover  rounded-2xl" />
-      <h3>car</h3>
-      <p>hhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+      <Image imgSrc={imageURL} altText={title} className="w-full h-100 object-cover  rounded-2xl" />
+      <h3>{title}</h3>
+      <p>{description}</p>
       <div className="flex items-center  my-4 space-x-3 ">
-        <span className="w-5 h-5 bg-red-600 rounded-full"></span>
-        <span className="w-5 h-5 bg-yellow-600 rounded-full"></span>
-        <span className="w-5 h-5 bg-indigo-600 rounded-full"></span></div>
+        {colors?.map((color) => (
+          <span key={color} className={`w-5 h-5 bg-${color}-600 rounded-full`}></span>
+        ))}
+      </div>
       <div className="flex items-center justify-between">
-        <span className="font-bold">$500,000</span>
+        <span className="font-bold">${price?.toLocaleString()}</span>
 
-        <Image imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s" altText="car" className="w-5 h-5 rounded-full  object-center" />
+        <Image imgSrc={imageURL} altText={title} className="w-5 h-5 rounded-full  object-center" />
       </div>
       <div className="flex items-center justify-between  space-x-4 mt-2">{/* gap-4  */}
         <Button className="bg-blue-500 text-white "
