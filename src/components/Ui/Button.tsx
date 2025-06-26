@@ -2,7 +2,7 @@
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     children?: React.ReactNode;
     className?: string;
-    width: "w-full" | "w-fit";
+    width?: "w-full" | "w-fit";
 
 }
 const Button = ({ children, className, width = "w-full", ...rest }: ButtonProps) => {
