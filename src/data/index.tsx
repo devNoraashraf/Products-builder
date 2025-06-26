@@ -1,4 +1,4 @@
-import type { Iproduct } from "../interfaces";
+import type { IFormData, Iproduct } from "../interfaces";
 import {v4 as uuid} from "uuid";
 export const products: Iproduct[] = [
     {
@@ -50,3 +50,41 @@ export const products: Iproduct[] = [
     }
         
 ];
+
+export const formData: IFormData[] = [
+    {
+        id: "title",
+        name: "title",
+        label: " Product   Title",
+        type: "text",
+        placeholder: "Enter product title",
+    },
+    {
+        id: "description",
+        name: "description",
+        label: "Product Description",
+        type: "textarea",
+        placeholder: "Enter product description",
+    },
+    {
+        id: "price",
+        name: "price",
+        label: "Product Price",
+        type: "number",
+        placeholder: "Enter product price",
+    },
+    {
+        id: "imageURL",
+        name: "imageURL",
+        label: "Product Image URL",
+        type: "text",
+        placeholder: "Enter product image URL",
+    },
+    // {
+    //     id: "colors",
+    //     name: "colors",
+    //     label: "Product Colors (comma separated)",
+    //     type: "text",
+    //     placeholder: "Enter product colors, e.g. red, blue, green",
+    // },
+]
