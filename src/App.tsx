@@ -6,30 +6,46 @@ import Model from './components/Ui/Model';
 import { useState } from 'react';
 import Button from './components/Ui/Button';
 import Input from './components/Ui/Input';
+import type { Iproduct } from './interfaces';
 
 
 
 function App() {
+  const [formState, setFormState] = useState<Iproduct>({
+    title: "",
+    description: "",
+    price:"",
+    imageURL: "",
+    colors: [],
+    category: {
+      name: "",
+      imageU: ""
+    }
+  })
   const [isOpen, setIsOpen] = useState(false)
 
-  function closeModal() {
-    setIsOpen(false)
-  }
+  const closeModal = () =>setIsOpen(false)
 
-  function openModal() {
-    setIsOpen(true)
+
+  const openModal = () =>setIsOpen(true)
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+   setFormState({
+      ...formState,
+      [name]: value
+   })
   }
-  
   const productCards = products.map(product => (
     <ProductsCard key={product.id} product={product} />
   ));
 
-  const renderform = formData.map(input=> 
+  const renderform = formData.map(input =>
     <div className='flex flex-col space-y-2'>
       <label htmlFor={input.id}> {input.label}</label>
-       <Input type={input.type} id={input.id} name={input.name} placeholder={input.placeholder} />
+      <Input type={input.type} id={input.id} name={input.name} placeholder={input.placeholder}  value={formState[input.name]} onChange={handleChange} />
     </div>
-   );
+  );
 
   return (
     <main>
@@ -40,7 +56,7 @@ function App() {
         {productCards}
       </div>
       <Model isOpen={isOpen} closeModal={closeModal} title="My Modal Title">
-       {renderform}
+        {renderform}
         <div className="flex  items-center space-x-2">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white ">
             Submit

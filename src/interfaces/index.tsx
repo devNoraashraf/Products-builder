@@ -2,13 +2,14 @@ export interface Iproduct {
     id?: string | undefined;
     title?: string;
     description: string;
-    price: number;
+    price: string;
     imageURL: string;
     colors: string[];
     category?: {
         name?: string;
-        imageURL?: string;
+        imageU: string;
     }
+      [key: string]: any; // 👈 أضف هذا السطر
 }
 export interface IFormData {
     id: string;

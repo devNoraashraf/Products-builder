@@ -5,47 +5,47 @@ export const products: Iproduct[] = [
         id: uuid(),
         title: "NORA",
         description: "A fast carjfffffffffjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
-        price: 50000,
+        price: "50000",
         imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s",
         colors: ["red", "blue", "green"],
         category: {
             name: "Vehicles",
-            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+            imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
         }
     },
     {
         id: uuid(),
         title: "Bike",
         description: "A cool bike",
-        price: 15000,
+        price: "15000",
         imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s",
         colors: ["black", "white"],
         category: {
             name: "Vehicles",
-            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+            imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
         }
     },
     {
         id: uuid(),
         title: "Boat",
         description: "A luxury boat",
-        price: 200000,
+        price: "200000",
         imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s",
         colors: ["white", "blue"],
         category: {
             name: "Vehicles",
-            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+            imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
         }
     },
     {        id: uuid(),
         title: "Plane",     
         description: "A private plane",
-        price: 3000000,
+        price: "3000000",
         imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s",
         colors: ["white", "silver"],
         category: {
             name: "Vehicles",
-            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+            imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
         }
     }
         
