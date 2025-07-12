@@ -18,3 +18,8 @@ export interface IFormData {
     type: string;
     placeholder: string;
 }
+export interface Icategory {
+    id: string; 
+    name: string;
+    imageU: string;
+}

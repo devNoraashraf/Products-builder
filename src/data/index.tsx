@@ -1,4 +1,4 @@
-import type { IFormData, Iproduct } from "../interfaces";
+import type { Icategory, IFormData, Iproduct } from "../interfaces";
 import {v4 as uuid} from "uuid";
 export const products: Iproduct[] = [
     {
@@ -88,3 +88,46 @@ export const formData: IFormData[] = [
     //     placeholder: "Enter product colors, e.g. red, blue, green",
     // },
 ]
+export const Colors: string[] = [
+    "red",
+    "blue",
+    "green",
+    "black",
+    "bl",
+    "yellow",
+    "purple",
+    "orange"
+];
+export const categories: Icategory[] = [
+    {
+        id: uuid(),
+        name: "Vehicles",
+        imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+    },
+    {
+        id: uuid(),
+        name: "Electronics",
+        imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+    },
+    {
+        id: uuid(),
+        name: "Furniture",
+        imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+
+    },
+    {
+        id: uuid(),
+        name: "Clothing",
+        imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+    },
+    {
+        id: uuid(),
+        name: "Books",
+        imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+    },
+    {
+        id: uuid(),
+        name: "Toys",
+        imageU: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUr4T1HxkhfDA4fJCc2h0K32ZCFeVEDlQTog&s"
+    }    
+];
