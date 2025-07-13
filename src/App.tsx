@@ -1,5 +1,8 @@
-import Header from './components/Header';
-import './index.css'
+import Header from "./components/Header";
+import Tasks from "./components/Tasks";
+// import Post from "./components/Post";
+// import SideMenu from "./components/SideMenu";
+import "./index.css";
 // import ProductsCard from './components/ProductsCard'
 // import { Colors, formData, products } from './data';
 // import Model from './components/Ui/Model';
@@ -156,12 +159,36 @@ import './index.css'
 // }
 
 // export default App;
-
+// const Appside=true;
 function App() {
+  
+
   return (
-    <div className="App">
-     <Header />
+    <div className="App "><Header />
+      {/* <div className="flex">
+             
+      <div className="w-[500px] mx-auto my-5 ">
+        <Post title="post1" content="This is the content for post 1." > <h6>hiiinoraaaaaa</h6></Post>
+        <Post title="post2" content="This is the content for post 2." />
+        <Post title="post3" content="This is the content for post 3." />
+        <Post title="post4" content="This is the content for post 4." />
+        <Post title="post5"  />
+      </div>
+      <div className=" border border-gray-300  m-7 justify-between">
+      <AppsideMenu />
+
+      </div>
+      </div> */}
+      <Tasks />
     </div>
   );
 }
 export default App;
+
+// // function AppsideMenu(){
+// //   if(Appside=== true){
+// //     return <SideMenu />
+// //   }else{
+// //     return <div className="hidden"></div>
+// //   }
+// }
